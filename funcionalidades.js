@@ -98,11 +98,32 @@ function carregarPag(){
             img.innerHTML ='<img src="img/img3.jpg" width="50%" height="50%" alt="">';
         
         }
-        txt.innerText = 'gata, super inteligente e todos os adjetivos bons já inventados na terra';
 
-        
+        txt.innerText = 'gata, super inteligente e todos os adjetivos bons já inventados na terra!';
     
-    }else{
+    }else if(cont==4){
+
+        title.innerText = 'Quem diria que...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:800px)").matches) {
+            
+            img.innerHTML ='<img src="img/ifsp.jpg" width="100%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/ifsp.jpg" width="50%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'eu encontraria a melhor pessoa num dos piores lugares do mundo.';
+    
+    }
+    
+    else{
         window.location.reload();
     }
 
