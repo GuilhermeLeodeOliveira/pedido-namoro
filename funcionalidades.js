@@ -143,7 +143,7 @@ function carregarPag(){
     
     }else if(cont==6){
 
-        title.innerText = 'Mas...';
+        title.innerText = 'Mas o melhor de tudo...';
 
         img.innerHTML ='';
 
@@ -159,7 +159,147 @@ function carregarPag(){
         
         }
 
-        txt.innerText = 'o melhor de tudo é que ela é o meu amor!';
+        txt.innerText = 'é que ela é o meu amor!';
+
+    }else if(cont==7){
+
+        title.innerText = 'Quem diria que...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img7.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img7.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'eu encontraria a melhor pessoa num dos piores lugares do mundo.';
+
+    }else if(cont==8){
+
+        title.innerText = 'E que só depois de 4 anos...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img8.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img8.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'eu começaria a dormir no seu ombro durante nossos poucos minutos de descanso juntos';
+
+    }else if(cont==9){
+
+        title.innerText = 'Em menos de um ano...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img9.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img9.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'vi sua premiação na Olimpíada Brasileira de Astronomia';
+
+    }else if(cont==10){
+
+        title.innerText = 'Em menos de um ano...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img10.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img10.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'fiquei admirado enquanto você apresentava o seu trabalho de Inicição Científica';
+
+    }else if(cont==11){
+
+        title.innerText = 'Em menos de um ano...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img11.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img11.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'nos formamos';
+
+    }else if(cont==12){
+
+        title.innerText = 'Em menos de um ano...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img12.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img12.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'sorrimos juntos';
+
+    }else if(cont==13){
+
+        title.innerText = 'Em menos de um ano...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img13.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img13.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'estivemos lá um para o outro da jenuinamente';
 
     }
     
