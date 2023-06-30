@@ -76,7 +76,7 @@ function carregarPag(){
             img.innerHTML ='<img src="img/img2.jpg" width="90%" height="35%" alt="">';
 
         }else{
-            img.innerHTML ='<img src="img/img2.jpg" width="35%" height="35%" alt="">';
+            img.innerHTML ='<img src="img/img2.jpg" width="45%" height="35%" alt="">';
         }
 
         txt.innerText = 'Linda, meiga, cheirosa, maravilhosa...';
@@ -95,7 +95,7 @@ function carregarPag(){
 
         }else{
 
-            img.innerHTML ='<img src="img/img3.jpg" width="50%" height="50%" alt="">';
+            img.innerHTML ='<img src="img/img3.jpg" width="45%" height="50%" alt="">';
         
         }
 

@@ -43,7 +43,8 @@ button{
 @media (max-width: 1064px){
 
     main{
-        height: 350px;
+        height: 550px;
+        width: 70%;
     }
 
     button{
