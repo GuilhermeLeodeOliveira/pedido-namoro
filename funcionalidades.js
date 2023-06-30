@@ -49,7 +49,7 @@ function carregarPag(){
 
         txt.innerText = '';
 
-        if (window.matchMedia("(max-width:800px)").matches) {
+        if (window.matchMedia("(max-width:1064px)").matches) {
 
             img.innerHTML ='<img src="img/img1.jpg" width="90%" height="35%" alt="">';
 
@@ -71,7 +71,7 @@ function carregarPag(){
 
         txt.innerText = '';
         
-        if (window.matchMedia("(max-width:800px)").matches) {
+        if (window.matchMedia("(max-width:1064px)").matches) {
             
             img.innerHTML ='<img src="img/img2.jpg" width="90%" height="35%" alt="">';
 
@@ -89,7 +89,7 @@ function carregarPag(){
 
         txt.innerText = '';
 
-        if (window.matchMedia("(max-width:800px)").matches) {
+        if (window.matchMedia("(max-width:1064px)").matches) {
             
             img.innerHTML ='<img src="img/img3.jpg" width="90%" height="35%" alt="">';
 
@@ -99,9 +99,72 @@ function carregarPag(){
         
         }
 
-        txt.innerText = 'gata, super inteligente e todos os adjetivos bons já inventados na terra!';
+        txt.innerText = 'gata, muito inteligente, esforçada, super organizada';
     
     }else if(cont==4){
+
+        title.innerText = 'Já disse linda?';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img4.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img4.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'bela, delicada, encantadora, carinhosa';
+    
+    }else if(cont==5){
+
+        title.innerText = 'E...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img5.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img5.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'todos os melhores adjetivos já inventados na terra!';
+    
+    }else if(cont==6){
+
+        title.innerText = 'Mas...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img6.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img6.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'o melhor de tudo é que ela é o meu amor!';
+
+    }
+    
+    /*
+    else if(cont==4){
 
         title.innerText = 'Quem diria que...';
 
@@ -109,20 +172,20 @@ function carregarPag(){
 
         txt.innerText = '';
 
-        if (window.matchMedia("(max-width:800px)").matches) {
+        if (window.matchMedia("(max-width:1064px)").matches) {
             
-            img.innerHTML ='<img src="img/ifsp.jpg" width="100%" height="35%" alt="">';
+            img.innerHTML ='<img src="img/img4.jpg" width="90%" height="35%" alt="">';
 
         }else{
 
-            img.innerHTML ='<img src="img/ifsp.jpg" width="50%" height="50%" alt="">';
+            img.innerHTML ='<img src="img/img4.jpg" width="45%" height="50%" alt="">';
         
         }
 
         txt.innerText = 'eu encontraria a melhor pessoa num dos piores lugares do mundo.';
     
     }
-    
+*/
     else{
         window.location.reload();
     }
