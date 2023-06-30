@@ -73,7 +73,7 @@ function carregarPag(){
         
         if (window.matchMedia("(max-width:800px)").matches) {
             
-            img.innerHTML ='<img src="img/img2.jpg" width="75%" height="35%" alt="">';
+            img.innerHTML ='<img src="img/img2.jpg" width="90%" height="35%" alt="">';
 
         }else{
             img.innerHTML ='<img src="img/img2.jpg" width="35%" height="35%" alt="">';
