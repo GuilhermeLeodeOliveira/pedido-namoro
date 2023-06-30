@@ -7,6 +7,10 @@
     border-radius: 10px;
 }
 
+body{
+    background-image: url("img/fundo.gif");
+}
+
 h1{
     color: red;
     text-align: center;
@@ -15,7 +19,7 @@ h1{
 }
 
 main{
-    border: solid #FFF 2px;
+    border: solid #ffffff 2px;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -31,19 +35,30 @@ button{
     background-color: red;
     padding: 10px 50px 10px 50px;
     font-size:medium;
+    
 }
 
 .image{
     width: 100%;
     height: 90%;
     text-align: center;
-    padding-top: 10px;
 }
 
 p{
 
     margin-top: 8px;
 
+}
+
+footer{
+    width: 100%;
+    color: #FFF;
+    display: flex;
+    padding: 5px 0px 5px 0px;
+    justify-content: space-around;
+    align-items: center;
+    font-size:smaller;
+    margin-top: 10px;
 }
 
 @media (max-width: 1064px){

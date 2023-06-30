@@ -4,39 +4,70 @@ let img = document.getElementById("img");
 
 let txt = document.getElementById("txt");
 
-txt.style.fontSize='larger';
+txt.style.fontSize='x-large';
 
 let title = document.getElementById("title");
 
 let newText;
 
-function right(){
+let i=0;
 
-    cont++;
+let divImage = document.getElementById("divImage");
 
-    carregarPag();
+let btnRight = document.getElementById("btn-right");
 
-    /*
-    let btnRight = document.getElementById("btn-right");
-    btnRight.style.position="absolute";
-    let x = Math.floor(Math.random() * 300);
-    let y = Math.floor(Math.random() * 300);
-    btnRight.style.left = x+"px";
-    btnRight.style.top = y+"px";
+let btnLeft = document.getElementById('btn-left');
 
-        let btnRight = document.getElementById("btn-right");
-    
-        btnRight.style.position="static";
+let buttons = document.getElementById('buttons');
 
+if(cont==0){
 
-    */
+    btnLeft.style.display='none';
 
+    divImage.style.height = '50%';
+
+    buttons.style.height = '0';
+
+    buttons.style.display = 'flex';
+    buttons.style.alignItems = 'center';
+    buttons.style.content = 'center';
+
+    btnRight.style.marginLeft='auto';
+    btnRight.style.marginRight='auto';
+
+    btnRight.innerText='Lets GO!!';
 
 }
 
+function right(){
+    
+    btnLeft.style.display='inline';
+    buttons.style.display = 'block';
+
+    divImage.style.height = '90%';
+
+    btnRight.innerText='Próximo';
+
+    buttons.style.height = '10%';
+    buttons.style.textAlign = 'center';
+    buttons.style.width = '100%';
+    
+    if(cont==23){
+        carregarPag();    
+    }else{
+        cont++;
+        carregarPag();
+    }
+    
+}
+
 function left(){
-    cont--;
-    carregarPag();
+    if(cont<23){
+        cont--;
+        carregarPag();
+    }else{
+        aceitou();
+    }
 }
 
 function carregarPag(){
@@ -58,8 +89,6 @@ function carregarPag(){
             img.innerHTML ='<img src="img/img1.jpg" width="45%" height="35%" alt="">';
 
         }
-
-//        img.innerHTML ='<img src="img/img1.jpg" width="45%" height="35%" alt="">';
 
         txt.innerText = 'Essa aqui é o meu';
 
@@ -199,7 +228,7 @@ function carregarPag(){
         
         }
 
-        txt.innerText = 'eu começaria a dormir no seu ombro durante nossos poucos minutos de descanso juntos';
+        txt.innerText = 'eu começaria a dormir no seu ombro durante nossos poucos minutos de descanso';
 
     }else if(cont==9){
 
@@ -239,7 +268,7 @@ function carregarPag(){
         
         }
 
-        txt.innerText = 'fiquei admirado enquanto você apresentava o seu trabalho de Inicição Científica';
+        txt.innerText = 'fiquei admirado enquanto você apresentava o seu trabalho de Iniciação Científica';
 
     }else if(cont==11){
 
@@ -251,15 +280,15 @@ function carregarPag(){
 
         if (window.matchMedia("(max-width:1064px)").matches) {
             
-            img.innerHTML ='<img src="img/img11.jpg" width="90%" height="35%" alt="">';
+            img.innerHTML ='<img src="img/img11.jpeg" width="90%" height="35%" alt="">';
 
         }else{
 
-            img.innerHTML ='<img src="img/img11.jpg" width="45%" height="50%" alt="">';
+            img.innerHTML ='<img src="img/img11.jpeg" width="45%" height="50%" alt="">';
         
         }
 
-        txt.innerText = 'nos formamos';
+        txt.innerText = 'nos formamos juntos';
 
     }else if(cont==12){
 
@@ -271,15 +300,15 @@ function carregarPag(){
 
         if (window.matchMedia("(max-width:1064px)").matches) {
             
-            img.innerHTML ='<img src="img/img12.jpg" width="90%" height="35%" alt="">';
+            img.innerHTML ='<img src="img/img12.jpeg" width="90%" height="35%" alt="">';
 
         }else{
 
-            img.innerHTML ='<img src="img/img12.jpg" width="45%" height="50%" alt="">';
+            img.innerHTML ='<img src="img/img12.jpeg" width="45%" height="50%" alt="">';
         
         }
 
-        txt.innerText = 'sorrimos juntos';
+        txt.innerText = 'tivemos vários rolês';
 
     }else if(cont==13){
 
@@ -291,22 +320,19 @@ function carregarPag(){
 
         if (window.matchMedia("(max-width:1064px)").matches) {
             
-            img.innerHTML ='<img src="img/img13.jpg" width="90%" height="35%" alt="">';
+            img.innerHTML ='<img src="img/img13.jpeg" width="90%" height="35%" alt="">';
 
         }else{
 
-            img.innerHTML ='<img src="img/img13.jpg" width="45%" height="50%" alt="">';
+            img.innerHTML ='<img src="img/img13.jpeg" width="45%" height="50%" alt="">';
         
         }
 
-        txt.innerText = 'estivemos lá um para o outro da jenuinamente';
+        txt.innerText = 'nos tornamos universitários';
 
-    }
-    
-    /*
-    else if(cont==4){
+    }else if(cont==14){
 
-        title.innerText = 'Quem diria que...';
+        title.innerText = 'Em menos de um ano...';
 
         img.innerHTML ='';
 
@@ -314,21 +340,254 @@ function carregarPag(){
 
         if (window.matchMedia("(max-width:1064px)").matches) {
             
-            img.innerHTML ='<img src="img/img4.jpg" width="90%" height="35%" alt="">';
+            img.innerHTML ='<img src="img/img14.gif" width="90%" height="35%" alt="">';
 
         }else{
 
-            img.innerHTML ='<img src="img/img4.jpg" width="45%" height="50%" alt="">';
+            img.innerHTML ='<img src="img/img14.gif" width="45%" height="50%" alt="">';
         
         }
 
-        txt.innerText = 'eu encontraria a melhor pessoa num dos piores lugares do mundo.';
-    
+        txt.innerText = 'aconteceu tanta coisa que as vezes nem parece';
+
+    }else if(cont==15){
+
+        title.innerText = 'Mas que bom...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img15.jpeg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img15.jpeg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'me fez sentir que eu quero vivenciar muito mais ao seu lado';
+
+    }else if(cont==16){
+
+        title.innerText = 'Você é...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img16.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img16.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'a dama do meu vagabundo';
+
+    }else if(cont==17){
+
+        title.innerText = 'Você é...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img17.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img17.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'a minha Evangeline';
+
+    }else if(cont==18){
+
+        title.innerText = 'Você é...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img18.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img18.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'a minha Bela';
+
+    }else if(cont==19){
+
+        title.innerText = 'Você é...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img19.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img19.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'a minha Hinata';
+
+    }else if(cont==20){
+
+        title.innerText = 'Com você eu...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img20.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img20.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'vivo um mundo ideal';
+
+    }else if(cont==21){
+
+        title.innerText = 'Com você eu...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img21.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img21.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'vejo enfim luz brilhar';
+
+    }else if(cont==22){
+
+        title.innerText = 'Com você eu...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img22.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img22.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'sinto o amor chegar';
+
+    }else if(cont==23){
+
+        i++;
+
+        if(i==5){
+            alert("Tá de brincadeira :|");
+        }
+
+        title.innerText = 'Por isso eu finalmente pergunto...';
+
+        img.innerHTML ='';
+
+        txt.innerText = '';
+
+        if (window.matchMedia("(max-width:1064px)").matches) {
+            
+            img.innerHTML ='<img src="img/img23.jpg" width="90%" height="35%" alt="">';
+
+        }else{
+
+            img.innerHTML ='<img src="img/img23.jpg" width="45%" height="50%" alt="">';
+        
+        }
+
+        txt.innerText = 'Quer namorar comigo?';
+
+        
+        btnRight.innerText='Não';
+
+       
+        btnLeft.innerText = 'Sim';
+        if(i!=1){
+            btnRight.style.position="absolute";
+            let x = Math.floor(Math.random() * 300);
+            let y = Math.floor(Math.random() * 300);
+            btnRight.style.left = x+"px";
+            btnRight.style.top = y+"px";
+        }
+
+
+       // let btnRight = document.getElementById("btn-right");
+        
+        //btnRight.style.position="static";
+
     }
-*/
+    
     else{
         window.location.reload();
     }
 
 }
 
+function aceitou(){
+    
+    title.innerText = 'EU TE AMO!!';
+
+    img.innerHTML ='';
+  
+    btnRight.style.position="static";
+
+    txt.innerText = '';
+
+    if (window.matchMedia("(max-width:1064px)").matches) {
+            
+        img.innerHTML ='<img src="img/aceitou.gif" width="90%" height="35%" alt="">';
+
+    }else{
+
+        img.innerHTML ='<img src="img/aceitou.gif" width="85%" height="50%" alt="">';
+    
+    }
+
+    txt.innerText = 'WE ARE THE CHAMPIONS!';
+
+    btnLeft.style.display='none';
+       
+    btnRight.style.display='none';
+
+    txt.style.fontSize='xx-large';
+
+}
